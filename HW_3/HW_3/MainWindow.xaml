@@ -1,0 +1,21 @@
+﻿<Window x:Class="HW_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_3"
+        mc:Ignorable="d"
+        Title="Encryptor" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="encrypt" Content="Encrypt" Margin="309,0,0,35" Click="encryptor" IsEnabled="False" HorizontalAlignment="Left" Width="70" Height="20" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="tbEncryptedText" HorizontalAlignment="Left" Margin="42,75,0,84" TextWrapping="Wrap" Width="325" TextChanged="buttonsEnabler"/>
+        <TextBox x:Name="tbUnencryptedText" HorizontalAlignment="Left" Margin="430,75,0,84" TextWrapping="Wrap" Width="337" TextChanged="buttonsEnabler"/>
+        <TextBlock HorizontalAlignment="Left" Margin="309,31,0,0" Text="Code word" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCodeWord" HorizontalAlignment="Left" Margin="370,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="buttonsEnabler"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,57,0,0" Text="Encrypted text" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="564,57,0,0" Text="Unencrypted text" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="decrypt" Content="Decrypt" HorizontalAlignment="Left" Margin="420,0,0,35" Width="70" Click="decryptor" IsEnabled="False" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnSwitcher" Content="English" HorizontalAlignment="Left" Margin="610,29,0,0" VerticalAlignment="Top" Click="btnSwitcher_Click"/>
+
+    </Grid>
+</Window>
